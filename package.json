@@ -1,5 +1,5 @@
 {
-  "name": "spacegray-chalk-syntax",
+  "name": "spacegray-chalk",
   "theme": "syntax",
   "version": "0.0.1",
   "description": "An Atom syntax theme package of my custom version of @kkga/Spacegray Eighties theme",
