@@ -1,7 +1,7 @@
 {
   "name": "spacegray-chalk-syntax",
   "theme": "syntax",
-  "version": "2.0.0",
+  "version": "0.0.0",
   "description": "An Atom syntax theme package of my custom version of @kkga/Spacegray Eighties theme",
   "repository": "https://github.com/vyder/spacegray-chalk",
   "license": "MIT",
