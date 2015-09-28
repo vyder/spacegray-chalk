@@ -1,6 +1,6 @@
 @import "syntax-variables";
 
-editor-text-editor {
+atom-text-editor, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
@@ -51,12 +51,14 @@ editor-text-editor {
   }
 }
 
-:host, atom-text-editor .search-results .marker .region {
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
   background-color: transparent;
   border: 1px solid @syntax-result-marker-color;
 }
 
-:host, atom-text-editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
@@ -173,7 +175,7 @@ editor-text-editor {
 
     &.bold {
       color: @yellow;
-      font-style: bold;
+      font-weight: bold;
     }
 
     &.italic {
@@ -259,7 +261,7 @@ editor-text-editor {
 .markup {
   &.bold {
     color: @orange;
-    font-style: bold;
+    font-weight: bold;
   }
 
   &.changed {
@@ -303,6 +305,7 @@ editor-text-editor {
   }
 }
 
-atom-text-editor[mini] .scroll-view {
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
   padding-left: 1px;
 }
