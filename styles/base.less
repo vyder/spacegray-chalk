@@ -69,7 +69,6 @@ atom-text-editor .search-results .marker.current-result .region,
 .entity {
   &.name.type {
     color: @yellow;
-    text-decoration: underline;
   }
 
   &.other.inherited-class {
@@ -184,8 +183,12 @@ atom-text-editor .search-results .marker.current-result .region,
     }
   }
 
+  &.separator.inheritance {
+    color: @purple;
+  }
+
   &.section.embedded {
-    color: darken(@red, 10%);
+    color: @orange;
   }
 
 }
@@ -219,7 +222,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.name.tag {
     color: @red;
-    text-decoration: underline;
   }
 
   &.other.attribute-name {
@@ -302,6 +304,12 @@ atom-text-editor .search-results .marker.current-result .region,
   -webkit-font-smoothing: auto;
   &.heading {
     color: @green;
+  }
+}
+
+.source.ruby {
+  .punctuation.definition.constant.ruby {
+    color: @green !important;
   }
 }
 
